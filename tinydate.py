@@ -9,5 +9,5 @@ def parse_date(value: str) -> datetime:
 
 
 def days_between(start: str, end: str) -> int:
-    """Return the whole number of days from start to end."""
+    """Return whole days from start to end; the result may be negative."""
     return (parse_date(end) - parse_date(start)).days
