@@ -5,7 +5,7 @@ from datetime import datetime
 
 def parse_date(value: str) -> datetime:
     """Parse an ISO 8601 date or datetime."""
-    return datetime.fromisoformat(value)
+    return datetime.fromisoformat(value.strip())
 
 
 def days_between(start: str, end: str) -> int:
